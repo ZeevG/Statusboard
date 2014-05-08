@@ -11,7 +11,7 @@ urlpatterns = patterns(
     # url(r'^$', 'statusboard.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    # url(r'^admin/', include(admin.site.urls)),
 
     url(r'^forecast/(?P<pk>[0-9]+)$', ProxyDetailView.as_view(), name='item-detail')
 )
